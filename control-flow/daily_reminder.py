@@ -1,6 +1,6 @@
 # Personal Daily Reminder Application
 task = input("Enter the task you want to be reminded of daily: ")
-task_priority = input("Enter the task priority (high, medium, low): ").lower()
+priority = input("Enter the task priority (high, medium, low): ").lower()
 time_bound = input("Is this task time-bound? (yes/no): ").lower()
 
 match (task_priority):
