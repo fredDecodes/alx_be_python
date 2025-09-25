@@ -1,6 +1,6 @@
 # Weather Advice Program
 # This program provides clothing advice based on the temperature input by the user.
-weather_condition = input("What's the weather like today? (sunny, rainy, cold): ").strip().lower()
+weather_condition = input("What's the weather like today? (sunny/rainy/cold): ").strip().lower()
 
 if weather_condition == "sunny":
     print("Wear a t-shirt and sunglasses.")
