@@ -16,8 +16,8 @@ match (priority):
             print("Maximum 3 days, get it done.")
     case "low":
         if (time_bound == "yes"):
-            print(f"Reminder: {task} is on the low but time bound, maximum 5 days to complete.")
+            print(f"Reminder: {task} is a low priority task. Consider completing it when you have free time.")
         else:
-            print("Consider completing it when you have free time.")
+            print("Consider doing it whenever possible.")
     case _:
         print("You can rest or have some fun.")
