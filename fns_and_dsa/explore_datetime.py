@@ -5,8 +5,8 @@ current_datetime = datetime.now()
 
 def display_current_datetime():
     # Get the current date and time
-    current_date = current_datetime.date()
-    current_time = current_datetime.time()
+    current_date = current_datetime.date().strftime("%Y-%m-%d")
+    current_time = current_datetime.time().strftime("%H:%M:%S")
     print(f"Current date and time: {current_date} {current_time}")
 
 def calculate_future_date():
