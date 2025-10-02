@@ -17,17 +17,18 @@ def main():
     if temperature_input.replace('.', '', 1).isdigit():
         temperature = float(temperature_input)
         choice = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
+
+        if choice == 'C':
+            fahrenheit = convert_to_fahrenheit(temperature)
+            print(f"{temperature}°C is {fahrenheit:.2f}°F")
+        elif choice == 'F':
+            celsius = convert_to_celsius(temperature)
+            print(f"{temperature}°F is {celsius:.2f}°C")
+        else:
+            print("Invalid choice. Please select C or F.")
     else:
         print("Invalid temperature. Please enter a numeric value")
       
-    if choice == 'C':
-        fahrenheit = convert_to_fahrenheit(temperature)
-        print(f"{temperature}°C is {fahrenheit:.2f}°F")
-    elif choice == 'F':
-        celsius = convert_to_celsius(temperature)
-        print(f"{temperature}°F is {celsius:.2f}°C")
-    else:
-        print("Invalid choice. Please select C or F.")
 
 if __name__ == "__main__":
     main()
