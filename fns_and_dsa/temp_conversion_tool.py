@@ -27,7 +27,7 @@ def main():
         else:
             print("Invalid choice. Please select C or F.")
     else:
-        print("Invalid temperature. Please enter a numeric value")
+        print("Invalid temperature. Please enter a numeric value.")
       
 
 if __name__ == "__main__":
