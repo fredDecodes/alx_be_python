@@ -19,7 +19,6 @@ def main():
         choice = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
     else:
         print("Invalid temperature. Please enter a numeric value")
-        return
       
     if choice == 'C':
         fahrenheit = convert_to_fahrenheit(temperature)
